@@ -1,0 +1,10 @@
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+CREATE TABLE course_offerings (course_id INTEGER, course_name TEXT);
+CREATE TABLE tutors (tutor_id INTEGER, tutor_name TEXT, course_id INTEGER, tutor_email TEXT);
+CREATE TABLE students (student_id INTEGER, student_name TEXT, course_id INTEGER, course_enrolled TEXT, tutor_id INTEGER, student_email TEXT);
+CREATE TABLE tutor_availability (tutor_id INTEGER, time_slot TEXT, course_id INTEGER, tutor_expertise TEXT);
+CREATE TABLE student_enrollment_request (student_id INTEGER, course_id INTEGER, time_slot TEXT, tutor_id INTEGER);
+CREATE TABLE tutor_teaching_request (tutor_id INTEGER, time_slot TEXT, course_id INTEGER);
+CREATE TABLE administrator (admin_name TEXT, admin_email TEXT);
+COMMIT;

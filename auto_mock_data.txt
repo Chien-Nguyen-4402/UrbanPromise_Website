@@ -1,0 +1,65 @@
+course_offerings 96985 ANATOMY
+course_offerings 61601 AP_GOV
+course_offerings 89568 AP_CALC_AB
+course_offerings 97077 AP_CALC_BC
+course_offerings 65582 AP_WORLD_HISTORY
+course_offerings 83496 AP_PHYSICS
+course_offerings 49754 AP_US_HISTORY
+course_offerings 14316 GEN_CHEM1
+course_offerings 88513 AP_PSYCH
+tutor_availability 2416 Wednesday_12:00_PM-1:00_PM 89568 AP_CALC_AB
+tutor_availability 3428 Tuesday_8:00_AM-10:00_AM 88513 AP_PSYCH
+tutor_availability 3428 Thursday_11:00_AM-12:00_PM 97077 AP_CALC_BC
+tutor_availability 2416 Thursday_12:00_PM-1:00_PM 49754 AP_US_HISTORY
+tutor_availability 8935 Tuesday_8:00_AM-10:00_AM 88513 AP_PSYCH
+tutor_availability 2102 Tuesday_5:00_PM-7:00_PM 61601 AP_GOV
+tutor_availability 3428 Friday_3:00_PM-4:00_PM 14316 GEN_CHEM1
+tutor_availability 2102 Tuesday_1:00_PM-2:00_PM 97077 AP_CALC_BC
+tutor_availability 3428 Tuesday_5:00_PM-6:00_PM 49754 AP_US_HISTORY
+tutor_availability 2102 Friday_1:00_PM-2:00_PM 83496 AP_PHYSICS
+tutor_availability 3428 Tuesday_2:00_PM-4:00_PM 61601 AP_GOV
+tutor_availability 2416 Wednesday_3:00_PM-4:00_PM 83496 AP_PHYSICS
+tutor_availability 2416 Friday_11:00_AM-1:00_PM 88513 AP_PSYCH
+tutor_availability 3428 Friday_2:00_PM-3:00_PM 96985 ANATOMY
+tutor_availability 3428 Thursday_5:00_PM-7:00_PM 88513 AP_PSYCH
+tutor_availability 8935 Wednesday_2:00_PM-3:00_PM 96985 ANATOMY
+tutor_availability 2102 Tuesday_2:00_PM-3:00_PM 14316 GEN_CHEM1
+tutor_availability 8935 Friday_4:00_PM-5:00_PM 14316 GEN_CHEM1
+tutor_availability 2102 Wednesday_4:00_PM-5:00_PM 97077 AP_CALC_BC
+tutor_availability 2102 Monday_9:00_AM-10:00_AM 97077 AP_CALC_BC
+administrator TJ_OWENS tonylightningfan@gmail.com
+administrator LOIS_OMOTARA lo2173@princeton.edu
+student_info 2081691887 TONY_OWENS_JR to5@princeton.edu
+student_info 2093520606 LOIS_KIRK loiskirk@gmail.com
+student_info 2004901836 HOWARD_BOWLING howardbowling@gmail.com
+student_info 2061559597 WILHELMINA_SMITH wilhelmina9smith@gmail.com
+student_info 2099328541 BETH_ROBERTS beth99roberts@gmail.com
+student_info 2055797955 RYAN_FOSTER ryan2foster@gmail.com
+student_tutors 2055797955 14316 3428 Friday_3:00_PM-4:00_PM
+student_tutors 2061559597 61601 2102 Tuesday_5:00_PM-7:00_PM
+student_tutors 2093520606 97077 3428 Thursday_11:00_AM-12:00_PM
+student_tutors 2093520606 49754 3428 Tuesday_5:00_PM-6:00_PM
+student_tutors 2093520606 88513 8935 Tuesday_8:00_AM-10:00_AM
+student_tutors 2099328541 89568 2416 Wednesday_12:00_PM-1:00_PM
+student_tutors 2004901836 88513 3428 Tuesday_8:00_AM-10:00_AM
+student_tutors 2055797955 97077 2102 Tuesday_1:00_PM-2:00_PM
+student_tutors 2081691887 83496 2102 Friday_1:00_PM-2:00_PM
+student_tutors 2099328541 83496 2416 Wednesday_3:00_PM-4:00_PM
+tutors_info 8935 TONY_OWENS tonymetsfan@gmail.com
+tutors_info 2416 HARPREET_KAUR hkaur@princeton.edu
+tutors_info 3428 CHRISTINA_OWENS christinao546@gmail.com
+tutors_info 2102 CHIEN_NGUYEN cn2802@princeton.edu
+tutors_courses 3428 14316 AP_CALC_BC Friday_3:00_PM-4:00_PM
+tutors_courses 2102 61601 AP_PHYSICS Tuesday_5:00_PM-7:00_PM
+tutors_courses 3428 97077 AP_WORLD_HISTORY Thursday_11:00_AM-12:00_PM
+tutors_courses 3428 49754 AP_PSYCH Tuesday_5:00_PM-6:00_PM
+tutors_courses 8935 88513 AP_PSYCH Tuesday_8:00_AM-10:00_AM
+tutors_courses 2416 89568 AP_PSYCH Wednesday_12:00_PM-1:00_PM
+tutors_courses 3428 88513 AP_CALC_BC Tuesday_8:00_AM-10:00_AM
+tutors_courses 2102 97077 AP_CALC_AB Tuesday_1:00_PM-2:00_PM
+tutors_courses 2102 83496 AP_CALC_BC Friday_1:00_PM-2:00_PM
+tutors_courses 2416 83496 AP_CALC_BC Wednesday_3:00_PM-4:00_PM
+tutors_courses 2416 88513 AP_CALC_BC Friday_11:00_AM-1:00_PM
+tutors_courses 2416 49754 AP_GOV Thursday_12:00_PM-1:00_PM
+tutors_courses 3428 96985 AP_WORLD_HISTORY Friday_2:00_PM-3:00_PM
+tutors_courses 3428 61601 AP_US_HISTORY Tuesday_2:00_PM-4:00_PM

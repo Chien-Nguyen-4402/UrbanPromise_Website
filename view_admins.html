@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<head>
+	<title>urbanpromisetutorportal.com</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body style = "color: #663399;font-family: Pluto 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">
+				<img src="/static/logo.png" width = "80" height = "80" alt="Logo">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav" style = "color:black">
+					<li class="nav-item active">
+						<a class="nav-link" href="/signin">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/about">About Us</a>
+					</li>
+<<<<<<< HEAD
+         <li class="nav-item active">
+						<a class="nav-link" href="/signin">View Admins <span class="sr-only">(current)</span></a>
+					</li>
+          <li class="nav-item active">
+						<a class="nav-link" href="/admin_tutors">View Tutors <span class="sr-only">(current)</span></a>
+					</li>
+          <li class="nav-item active">
+						<a class="nav-link" href="/admin_students">View Students <span class="sr-only">(current)</span></a>
+					</li>
+
+                  <li class="nav-item active">
+          <a class="nav-link" href = "/adduser">Add User</a>
+          </li>
+
+          <li class="nav-item active">
+          <a class="nav-link" href = "/remove">Remove User</a>
+          </li>
+				<li class="nav-item active">
+							  <a class="nav-link" href="/admin_teach"> Tutor Add Requests <span class="sr-only">(current)</span></a>
+						  </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="/admin_deteach"> Tutor Remove Requests<span class="sr-only">(current)</span></a>
+          </li>
+
+                    <li class="nav-item">
+						<a class="nav-link" href = "/index" >Log Out</a>
+=======
+                    <li class="nav-item">
+						<a class="nav-link" href="javascript:history.back()" >Back</a>
+					</li>
+                    <li class="nav-item">
+						<a class="nav-link" href = "/logout" >Log Out</a>
+>>>>>>> e32a6e9677efe72da20be2a67e3306769f3cd375
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+    
+<!-- Page content -->
+<div class="container " align="center" style="text-align: center;">
+    <h2>Active Admins</h2>
+    <!-- <p>View your students with corresponding course and time</p> -->
+</div>    
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>E-mail</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for option in options %}
+        <tr >
+            <td><a style = "padding-left: 10px;">{{option[0].replace('_',' ')}}</a></td>
+            <td><a style = "padding-left: 10px;">{{option[1].replace('\n','')}}</a></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+  </table>
+
+  </body>

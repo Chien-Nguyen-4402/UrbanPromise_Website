@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>urbanpromisetutorportal.com</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body style = "color: #663399;font-family: Pluto 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">
+				<img src="/static/logo.png" width = "80" height = "80" alt="Logo">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav" style = "color:black">
+					<li class="nav-item active">
+						<a class="nav-link" href="/signin">Home <span class="sr-only">(current)</span></a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="/about">About Us</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="/signin" >View Students</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="/tutor_requests">View Student Requests <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="/tutor_avail">My Availability <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="/tutor_add_session">Add a Session <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="/tutor_remove_session">Remove a Session <span class="sr-only">(current)</span></a>
+					</li>
+                    <!-- <li class="nav-item"> -->
+						<!-- <a class="nav-link" href = "/requesttutor" >Request Tutor</a> -->
+					<!-- </li> -->
+                    <li class="nav-item">
+						<a class="nav-link" href = "/logout" >Log Out</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+       <!-- Page content -->
+       <div class="container " align="center" style="text-align: center;">
+        <h2>Student Requests</h2>
+        <p>View students who have requests to join your class</p>
+    </div>
+
+    <table class="table table-striped">
+		<thead >
+			<tr>
+			  <th>Student Name</th>
+			  <th>Student Email</th>
+			  <th>Course</th>
+			  <th>Time</th>
+              <th>Accept</th>
+			  <th>Reject</th>
+
+			</tr>
+		  </thead>
+        <tbody>
+            {% for course in courses %}
+            <tr style = "align-items: center; " >
+              <td><a style = "padding-left: 10px;">{{course[0].replace('_',' ')}}</a></td>
+              <td><a style = "padding-left: 10px;">{{course[1].replace('\n','').replace('_',' ')}}</a></td>
+              <td><a style = "padding-left: 10px;">{{course[2].replace('_',' ').replace('\n',' ')}}</a></td>
+              <td><a style = "padding-left: 10px;">{{course[3].replace('_',' ')}}</a></td>
+              <!-- <td><button onclick="redirectToHref()" style = "background-color:#24a0ed; color:white" id = "foo">{{course}}</button></td> -->
+              <!-- <td><button onclick="redirectToHref()" style = "background-color:#24a0ed; color:white" id = "foo1">Reject</button></td> -->
+              <form action = "/tutor_accept" method = "post">
+				<input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+                <input type="hidden" name="student_id" value="{{course[4]}}" />
+                <input type="hidden" name="course_id" value="{{course[-2]}}" />
+                <input type="hidden" name="time_slot" value="{{course[3]}}" />
+                <input type="hidden" name="tutor_id" value="{{course[-1]}}" />
+              <td><input type = "submit" value = "Accept"/></td>
+            </form>
+            <form action = "/tutor_reject" method = "post">
+				<input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+                <input type="hidden" name="student_id" value="{{course[4]}}" />
+                <input type="hidden" name="course_id" value="{{course[-2]}}" />
+                <input type="hidden" name="time_slot" value="{{course[3]}}" />
+                <input type="hidden" name="tutor_id" value="{{course[-1]}}" />
+              <td><input type = "submit" value = "Reject"/></td>
+            </form>
+            </tr>
+            {% endfor %}
+          </tbody>
+      </table>
+      <script>
+        function redirectToHref() {
+          // Get the href value from the provided URL
+          var href = "javascript:history.back()"; // Replace with the desired href
+
+          // Redirect to the provided URL
+          window.location.href = href;
+        }
+        </script>
+
+      </body>
+      </html>

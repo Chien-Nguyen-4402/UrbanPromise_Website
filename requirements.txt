@@ -1,0 +1,24 @@
+# This is a comment
+
+# Upgrade pip to the latest version
+pip==23.0.1
+
+# Package 1
+sqlalchemy==1.4.26
+
+# Package 2
+flask==2.1.1
+flask_wtf
+# Package 3
+requests==2.26.0
+
+# Package 4
+oauthlib==3.2.0
+
+psycopg2==2.9.3
+
+gunicorn==20.1.0
+
+names==0.3.0
+
+schedule==1.2.0

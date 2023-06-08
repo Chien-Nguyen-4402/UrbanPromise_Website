@@ -1,0 +1,7 @@
+course_offerings 'course_id' 'course_name'
+tutors 'tutor_id' 'tutor_name' 'course_id' 'tutor_email'
+students 'student_id' 'student_name' 'course_id' 'course_enrolled' 'tutor_id' 'student_email'
+tutor_availability 'tutor_id' 'time_slot' 'course_id' 'tutor_expertise'
+student_enrollment_request 'student_id' 'course_id' 'time_slot' 'tutor_id'
+tutor_teaching_request 'tutor_id' 'timer_slot' 'course_id'
+administrator 'admin_name' 'admin_email'
